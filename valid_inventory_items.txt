@@ -1,0 +1,5 @@
+Rose Anita A80 5@40
+Rose Anita A80 10@60
+Rose Ballerina B22 3@6.9
+Rose Ballerina B22 6@9.6
+Rose Ballerina B22 9@12.1

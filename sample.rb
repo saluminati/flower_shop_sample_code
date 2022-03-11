@@ -14,8 +14,10 @@ FlowerShop.configure  do |config|
 			]
 end
 
-order_items = FlowerShop.place_order(quantity: 10, product_code: 'A80')
-puts "Ordered 10 flowers from A80, bundled: #{order_items.inspect} containing #{order_items.sum} flowers"
+cart = FlowerShop.place_order(quantity: 10, product_code: 'A80')
+cart.print_order
+
+puts "=========================="
 
 # Load Inventory from file
 file_path = File.expand_path('valid_inventory_items.txt')
@@ -25,10 +27,14 @@ FlowerShop.configure  do |config|
 	config.inventory_meta_deta = file_path
 end
 
-order_items = FlowerShop.place_order(quantity: 15, product_code: 'B22')
-puts "Ordered 15 flowers from B22, bundled: #{order_items.inspect} containing #{order_items.sum} flowers"
+cart = FlowerShop.place_order(quantity: 15, product_code: 'B22')
+cart.print_order
+
+puts "=========================="
 
 
 # Load closest possible bundles
-order_items = FlowerShop.place_order(quantity: 17, product_code: 'B22')
-puts "Ordered 17 flowers from B22, bundled: #{order_items.inspect} containing #{order_items.sum} flowers"
+cart = FlowerShop.place_order(quantity: 17, product_code: 'B22')
+cart.print_order
+
+puts "=========================="

@@ -1,17 +1,18 @@
-GIT
-  remote: git://github.com/saluminati/flower-shop.git
-  revision: 9e2bd4b2733abb1fec1065128fcd27e6235acd9b
+PATH
+  remote: ../flower_shop
   specs:
-    flower_shop (0.0.1)
+    flower_shop (0.0.2)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    byebug (11.1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   flower_shop!
 
 BUNDLED WITH
